@@ -1,10 +1,10 @@
 # Your code goes here!
 class Anagram
-  @anagrams = []
   attr_accessor :word
 
   def initialize(word)
     @word = word
+    @anagrams = []
   end
 
   def match(word_list)
