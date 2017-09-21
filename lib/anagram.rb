@@ -8,9 +8,8 @@ class Anagram
   end
 
   def match(word_list)
-    letter_word = @word.split('')
     word_list.select {|word|
-      word.split('').include?(letter_word)
+      word.split('').sort == @word.split('').sort
       @anagrams << word
       }
       @anagrams
