@@ -1,6 +1,6 @@
 # Your code goes here!
 class Anagram
-  @anagrams = Array.new
+  @anagrams = []
   attr_accessor :word
 
   def initialize(word)
