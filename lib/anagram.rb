@@ -1,6 +1,6 @@
 # Your code goes here!
 class Anagram
-  @anagram = Array.new
+  @anagrams = Array.new
   attr_accessor :word
 
   def initialize(word)
@@ -11,7 +11,7 @@ class Anagram
     letter_word = @word.split('')
     word_list.select {|word|
       word.split('').include?(letter_word)
-      << word
+      @anagrams<< word
       }
   end
 
