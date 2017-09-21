@@ -11,8 +11,9 @@ class Anagram
     letter_word = @word.split('')
     word_list.select {|word|
       word.split('').include?(letter_word)
-      @anagrams<< word
+      @anagrams << word
       }
+      @anagrams
   end
 
 
